@@ -3,6 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .collapsible {
+              background-color: #c78201;
+              cursor: pointer;
+              padding: 8px;
+              outline: none;
+              border: #772c00;
+              width: 100%;
+            }
+            
+            .active, .collapsible:hover {
+              background-color: #e05a00;
+            }
+            
+            .content {
+              padding: 0 18px;
+              display: none;
+              overflow: hidden;
+            }
+            </style>
+
         <title>Project Color</title>
     </head>
     
@@ -26,70 +47,89 @@
         <h2 style="text-align: center; color:#cc9600;">| Monthly Blog |</h2>
     <!-- BLOG ANNOUCEMENT  -->
         <div style="background-color: rgba(255, 146, 71, 0.25);border: #9e3a00;">
-            <div style="background-color: #c78201;display: flex; justify-content: space-between;">
-                <h3><img style="vertical-align:middle" src="img/blog_icon_new.png" width="30" height="30"> Blog Annoucement!</h3>
-                <h3>June 2023</h3>
-            </div>
+            <button type="button" class="collapsible">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3 style="font-family: fantasy;"><img style="vertical-align:middle" src="img/blog_icon_new.png" width="30" height="30"> Blog Annoucement!</h3>
+                    <h3>June 2023</h3>
+                </div>
+            </button>
         <!-- Content -->
-            <div>
+            <div class="content">
                 <pre style="font-size: large;">
-                    Hello! I'm Summer, solo game developer in-training, currently developing two titles:
-                    <span style="color:#2002c7">A Light Away</span>, a linear story-driven precision platformer with a (hopefully) fully working level editor.
-                    And <span style="color:#2002c7">Firelight</span>, an action adventure bullet-hell metroidvania.
+                Hello! I'm Never, solo game developer in-training, currently developing two titles:
+                <span style="color:#2002c7">A Light Away</span>, a linear story-driven precision platformer with a (hopefully) fully working level editor.
+                And <span style="color:#2002c7">Firelight</span>, an action adventure bullet-hell metroidvania.
 
-                    A lot of my time is spent this two things, mainly because of my ample free time between college,
-                    I started this sort of web-blog to centralize all related media that I work on, less personal projects, more commercial games.
+                A lot of my time is spent this two things, mainly because of my ample free time between college,
+                I started this sort of web-blog to centralize all related media that I work on, less personal projects, more commercial games.
                     
-                    Here I will try sharing details and closeups to the games, aswell as to give me a place to drop off my thoughts,
-                    Soon enough, I will set a <span style="color:#2002c7">Kofi</span> and <span style="color:#2002c7">Itch.io</span> pages in order to give an opportunity to help the workload,
-                    regardless, you are still able to drop feedback or complains at our <span style="color:#2002c7">discord server</span> linked right above here!
+                Here I will try sharing details and closeups to the games, aswell as to give me a place to drop off my thoughts,
+                Soon enough, I will set a <span style="color:#2002c7">Kofi</span> and <span style="color:#2002c7">Itch.io</span> pages in order to give an opportunity to help the workload,
+                regardless, you are still able to drop feedback or complains at our <span style="color:#2002c7">discord server</span> linked right above here!
                 </pre>
 
-                <h3 style="text-align: left;">&Tab;About myself</h3>
+                <h3 style="text-align: left;font-family: fantasy;"><pre>     About me!</pre></h3>
                 <pre style="font-size: large;">
-                    Already stated my name before but some formalities.
-                    My username is NeverEver(TM) and I have been an aspiring gamedev for a few years now,
-                    developed a few small things like mods and personal builds in order to gather experience.
+                Mainly known as NeverEver(TM) but my name is Summer.
 
-                    I'm a closeted transgirl, so there is that! :)
+                I have done a few things on modding and some silly projects, it is now that I have taken more seriously my career.
+                Big fan of how games are done, and have studied closely how to develop a game (But actions speak louder than words so here I come!)
                 </pre>
+                
+                <h3 style="font-family: fantasy;"><pre>&Tab;Firelight (Alpha Footage) </pre></h3>
+    
+                <pre>&Tab;First prototypes of the game, also eepy animation for savepoints
+                    <video width="480" height="320" autoplay muted loop>   
+                        <source src="mov/moff3.mp4" type="video/mp4">
+                        Your toaster is too old.
+                    </video>    <video width="480" height="320" autoplay muted loop>   
+                        <source src="mov/sleep.mp4" type="video/mp4">
+                        Your toaster is too old.
+                    </video>
+                </pre>
+                <pre>       Just something funny, dont ask how or why
+                    <video width="480" height="320" autoplay muted loop>   
+                        <source src="mov/help.mp4" type="video/mp4">
+                        Your toaster is too old.
+                    </video>    <video width="480" height="320" autoplay muted loop>   
+                        <source src="mov/ow.mp4" type="video/mp4">
+                        Your toaster is too old.
+                    </video>
+                </pre>
+    
+                <h3 style="text-align: center;">
+                    Last video update from the discord. And more to come!<br><br>
+                    <video width="480" height="320" autoplay muted loop>   
+                        <source src="mov/wedoalilbitofmoney.mp4" type="video/mp4">
+                        Your toaster is too old.
+                    </video>
+                    <img src="img/moth.PNG" width="320" height="240">
+                </h3>
+                <br>
+                <p> SHAW </p>
+                <audio controls>
+                    <source src="shaw.mp3" type="audio/mpeg">
+                    Your toaster is too old.
+                </audio>
             </div>
 
-            <h3 style="text-align: left; font-family: fantasy;"><pre>&nbsp;Firelight (Alpha Footage) </pre></h3>
-
-            <p>&Tab;First prototypes of the game, also eepy animation for savepoints
-                <video width="480" height="320" autoplay muted loop>   
-                    <source src="mov/moff3.mp4" type="video/mp4">
-                    Your toaster is too old.
-                </video>    <video width="480" height="320" autoplay muted loop>   
-                    <source src="mov/sleep.mp4" type="video/mp4">
-                    Your toaster is too old.
-                </video>
-            </p>
-            <pre>       Just something funny, dont ask how or why
-                <video width="480" height="320" autoplay muted loop>   
-                    <source src="mov/help.mp4" type="video/mp4">
-                    Your toaster is too old.
-                </video>    <video width="480" height="320" autoplay muted loop>   
-                    <source src="mov/ow.mp4" type="video/mp4">
-                    Your toaster is too old.
-                </video>
-            </pre>
-
-            <h3 style="text-align: center;">
-                Last video update from the discord. And more to come!<br><br>
-                <video width="360" height="240" autoplay muted loop>   
-                    <source src="mov/wedoalilbitofmoney.mp4" type="video/mp4">
-                    Your toaster is too old.
-                </video>
-                <img src="img/moth.PNG" width="480" height="320">
-            </h3>
-            <br>
-            <p> SHAW </p>
-            <audio controls>
-                <source src="shaw.mp3" type="audio/mpeg">
-                Your toaster is too old.
-            </audio>
         </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
     </body>
 </html>
