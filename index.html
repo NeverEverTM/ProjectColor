@@ -6,6 +6,8 @@
         <style>
             .background-holder
             {
+                font-size: larger;
+                color: white;
                 font-family: fantasy;
                 background-image: url('img/lost.PNG');
                 background-repeat: no-repeat;
@@ -15,16 +17,16 @@
                 background-color: #916cbb;
             }
             .collapsible {
-              background-color: #c78201;
+              background-color: #5f89e4;
               cursor: pointer;
               padding: 8px;
-              outline: 4px solid #9e3a00;
+              outline: 4px solid #1d27ad;
               border: none;
               border-radius: 12px;
               width: 100%;
             }
             .active, .collapsible:hover {
-              background-color: #e05a00;
+              background-color: #9ebefa;
             }
             .content {
                 font-size: large;
@@ -34,26 +36,32 @@
             }
             .blog-post
             {
-                border: 1px solid #884200;
+                border: 1px solid #020088;
                 border-radius: 24px;
-                background-color: rgba(255, 146, 71, 0.25);
-                outline: #9e3a00;
+                background-color: rgba(0, 23, 228, 0.65);
+                outline: #020088;
             }
             .img-thumbnail
             {
-                border: 4px solid #884200;
-                background-color: #c78201;
+                border: 4px solid #020088;
+                background-color: #0269a5;
                 border-radius: 4px;
                 padding: 5px;
             }
+            .highlight
+            {
+                color: #53dadf;
+            }
             </style>
-
-        <script src="jquery.js"></script> 
-        <script> 
-            $(function() { $("#blogs-2023").load("html/blogs-2023.html"); });
-        </script> 
-
         <title>Project Color</title>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
+        <script> 
+            $(function() { $("#blogs-2023").load("html/blogs-2023.html");});
+            window.onload = function()
+            { 
+                $.getScript("blog-post-element.js");
+            }
+        </script>
     </head>
     
     <body class="background-holder">
@@ -65,103 +73,6 @@
     <!-- BLOG SLOTS  -->    
         <hr style="color:#271e8e">
         <h2 style="text-align: center; color:white;"><pre>Monthly Blog<pre></h2>
-    <!-- BLOG ANNOUCEMENT  -->
-        <div class="blog-post">
-            <button type="button" class="collapsible">
-                <div style="display: flex; justify-content: space-between;">
-                    <h3><img style="vertical-align:middle" src="img/blog_icon_new.png" alt="new blog" width="30" height="30"> Blog Annoucement!</h3><p>06/12/12</p>
-                </div>
-            </button>
-        <!-- Content -->
-            <div class="content">
-                <pre>
-                Hello! I'm Never, solo game developer in-training, currently developing two titles:
-                <span style="color:#2002c7">A Light Away</span>, a linear story-driven precision platformer with a (hopefully) fully working level editor.
-                And <span style="color:#2002c7">Firelight</span>, an action adventure bullet-hell metroidvania.
-
-                A lot of my time is spent this two things, mainly because of my ample free time between college,
-                I started this web-blog to centralize all related media that I work on, less personal projects, more commercial games.
-                    
-                Here I will try sharing details and behind the scenes, aswell as to drop off my thoughts during development,
-                Soon enough, I will set a <span style="color:#2002c7">Kofi</span> and <span style="color:#2002c7">Itch.io</span> pages so look up for that!
-                regardless, you are still able to drop feedback or complains at our <span style="color:#2002c7">discord server</span> linked right above here.
-                </pre>
-
-                <h3 style="text-align: left;"><pre>&Tab;About me!</pre></h3>
-                <pre>
-                Mainly known as NeverEver(TM) but my name is Summer.
-
-                I have done a few things on modding and some silly projects, it is now that I have taken more seriously my career.
-                Big fan of how games are done, and have studied closely how to develop a game 
-                (But actions speak louder than words so here I come!)
-                </pre>
-                
-                <h3><pre>&Tab;Firelight Test (Alpha Footage) </pre></h3>
-    
-                <pre>&Tab;First prototypes of the game, also eepy animation for savepoints
-                    <video width="480" height="320" autoplay muted loop>   
-                        <source src="mov/moff3.mp4" type="video/mp4">
-                        Your toaster is too old.
-                    </video>    <video width="480" height="320" autoplay muted loop>   
-                        <source src="mov/sleep.mp4" type="video/mp4">
-                        Your toaster is too old.
-                    </video>
-                </pre>
-                <pre>       Just something funny, dont ask how or why
-                    <video width="480" height="320" autoplay muted loop>   
-                        <source src="mov/help.mp4" type="video/mp4">
-                        Your toaster is too old.
-                    </video>    <video width="480" height="320" autoplay muted loop>   
-                        <source src="mov/ow.mp4" type="video/mp4">
-                        Your toaster is too old.
-                    </video>
-                </pre>
-    
-                <pre>
-                    Last video update from the discord. And more to come!<br><br>
-                    <video width="480" height="320" autoplay muted loop>   
-                        <source src="mov/wedoalilbitofmoney.mp4" type="video/mp4">
-                        Your toaster is too old.
-                    </video>    <img class="img-thumbnail" src="img/moth.PNG" alt="moth uvu" width="480" height="280">
-                </pre>
-                <br>
-                <p> SHAW </p>
-                <audio controls>
-                    <source src="shaw.mp3" type="audio/mp3">
-                    Your toaster is too old.
-                </audio>
-            </div>
-        </div>
-        <br>
-        <div class="blog-post">
-            <button type="button" class="collapsible">
-                <div style="display: flex; justify-content: space-between;">
-                    <h3><img style="vertical-align:middle" src="img/blog_icon_new.png" alt="new blog" width="30" height="30"> This is a really really really long text for padding, to see maximumn length in sentences!</h3><p>06/12/12</p>
-                </div>
-            </button>
-            <div class="content">
-                <pre> 
-                If you are seeing this, hello!
-                Im doing stuff :P
-                </pre>
-            </div>
-        </div>
-
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            
-            for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-              });
-            }
-            </script>
+        <div id="blogs-2023"></div>
     </body>
 </html>
