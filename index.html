@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="To deliver the ultimate experience. Game Development Central of NeverEver">
         <meta name="twitter:title" content="Project Color Media">
-        <meta property="og:image" content="https://neverevertm.github.io/ProjectColorWeb/img/lost.PNG">
+        <meta property="og:image" content="/img/lost.PNG">
         <link rel="icon" type="img/png" href="/img/blog_icon_new.png">
         <style>
             .background-holder
@@ -28,6 +28,22 @@
               border: none;
               border-radius: 12px;
               width: 100%;
+            }
+            .homebutton
+            {
+              font-family: fantasy;
+              color: #1d27ad;
+              background-color: #5f89e4;
+              cursor: pointer;
+              padding: 8px;
+              outline: 2px solid #1d27ad;
+              border: none;
+              font-size: large;
+              width: 15%;
+            }
+            .active, .homebutton:hover
+            {
+                background-color: #9ebefa;
             }
             .active, .collapsible:hover {
               background-color: #9ebefa;
@@ -70,13 +86,42 @@
     
     <body class="background-holder">
     <!-- TOP-BAR  --> 
-        <img src="img/title.png" alt="Project Color Media" width="600" height="50">
-
-    <h3><pre style="vertical-align: auto;"><a href="https://discord.gg/6x6SkwVQ7Y"><img src="img/discord-mark-white.png" alt="Discord" width="40" height="30"></a>  <a href="https://youtube.com"><img src="img/youtubeIcon.png" alt="Youtube" width="40" height="30"></a></pre></h3>
+        <div>
+            <img src="img/title.png" alt="Project Color Media" width="600" height="50">
+            <a href="https://discord.gg/6x6SkwVQ7Y"><img src="img/discord-mark-white.png" alt="Discord" width="40" height="30"></a>     <a href="https://youtube.com"><img src="img/youtubeIcon.png" alt="Youtube" width="40" height="30"></a>
+        </div>
+    <h3 style="text-align: center;word-spacing: 200%;">
+        <button type="button" class="homebutton">
+            <div>
+                Games
+            </div>
+        </button>
+        <button type="button" class="homebutton">
+            <div>
+                Development Blogs
+            </div>
+        </button>
+        <button type="button" class="homebutton">
+            <div>
+                Home
+            </div>
+        </button>
+        <button type="button" class="homebutton">
+            <div>
+                About
+            </div>
+        </button>
+        <button type="button" class="homebutton">
+            <div>
+                Contacts
+            </div>
+        </button>
+    </h3>
 
     <!-- BLOG SLOTS  -->    
         <hr style="color:#271e8e">
-        <h2 style="text-align: center; color:white;"><pre>Monthly Blog<pre></h2>
+        <h2 style="text-align: center; color:white;"><pre>Development Blogs (2023)<pre></h2>
+        <hr style="color:#271e8e">
         <div id="blogs-2023"></div>
     </body>
 </html>
