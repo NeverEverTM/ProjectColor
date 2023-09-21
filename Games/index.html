@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Color - Games</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="To deliver the ultimate experience. Game Development Central of NeverEver">
+        <meta name="twitter:title" content="Project Color Media">
+        <meta property="og:image" content="/img/lost.PNG">
+        <link rel="icon" type="img/png" href="/img/artificial_raw.png">
+    </head>
+    <style>
+        .background-holder
+            {
+                font-size: larger;
+                color: white;
+                font-family: fantasy;
+                background-image: url('/img/lost.PNG');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                background-color: #916cbb;
+            }
+            .game-block
+            {
+                border: 1px solid #020088;
+                border-radius: 24px;
+                background-color: rgba(0, 16, 163, 0.55);
+                outline: #020088;
+            }
+            .highlight
+            {
+                color: #53dadf;
+            }
+    </style>
+            
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
+     <script> 
+         $(function() { $("#top-bar").load("/html/top-bar.html");});
+         $(function() { $("#game-firelight").load("game_firelight.html");});
+    </script>
+    <body class="background-holder">
+        <div id="top-bar"></div>
+        <div style="background-color: #271e8e;">
+            <hr style="color:#271e8e">
+            <h2 style="text-align: center; color:white;"><pre>Games<pre></h2>
+            <hr style="color:#271e8e">
+        </div>
+
+        <div id="game-firelight"></div>
+    </body>
+</html>
