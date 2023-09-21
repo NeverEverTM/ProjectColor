@@ -8,26 +8,12 @@
         <meta name="twitter:title" content="Project Color Media">
         <meta property="og:image" content="img/lost.PNG">
         <link rel="icon" type="img/png" href="img/artificial_raw.png">
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
+        <script> 
+            $(function() { $("#top-bar").load("html/top-bar.html");});
+       </script>
     </head>
-    <style>
-        .background-holder
-            {
-                font-size: larger;
-                color: white;
-                font-family: fantasy;
-                background-image: url('img/lost.PNG');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-attachment: fixed;
-                background-color: #916cbb;
-            }
-    </style>
             
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
-     <script> 
-         $(function() { $("#top-bar").load("html/top-bar.html");});
-    </script>
     <body class="background-holder">
         <div id="top-bar"></div>
         <div class="header-purple">

@@ -8,6 +8,15 @@
         <meta name="twitter:title" content="Project Color Media">
         <meta property="og:image" content="img/lost.PNG">
         <link rel="icon" type="img/png" href="img/artificial_raw.png">
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
+        <script>
+             $(function() { $("#blogs-2023").load("blogs-2023.html");});
+             $(function() { $("#top-bar").load("html/top-bar.html");});
+             window.onload = function()
+                { 
+                    $.getScript("html/blog-post-element.js");
+                }
+        </script>
     </head>
     <style>
             .collapsible {
@@ -45,15 +54,6 @@
             }
     </style>
             
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
-    <script>
-         $(function() { $("#blogs-2023").load("blogs-2023.html");});
-         $(function() { $("#top-bar").load("html/top-bar.html");});
-         window.onload = function()
-            { 
-                $.getScript("html/blog-post-element.js");
-            }
-    </script>
     <body class="background-holder">
         <div id="top-bar"></div>
         <div style="background-color: #271e8e;">
