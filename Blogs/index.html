@@ -2,26 +2,14 @@
 <html lang="en">
     <head>
         <title>Project Color - Blogs</title>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="To deliver the ultimate experience. Game Development Central of NeverEver">
         <meta name="twitter:title" content="Project Color Media">
-        <meta property="og:image" content="/img/lost.PNG">
-        <link rel="icon" type="img/png" href="/img/artificial_raw.png">
+        <meta property="og:image" content="img/lost.PNG">
+        <link rel="icon" type="img/png" href="img/artificial_raw.png">
     </head>
     <style>
-        .background-holder
-            {
-                font-size: larger;
-                color: white;
-                font-family: fantasy;
-                background-image: url('/img/lost.PNG');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                background-attachment: fixed;
-                background-color: #916cbb;
-            }
             .collapsible {
               background-color: #5f89e4;
               cursor: pointer;
@@ -60,18 +48,18 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script> 
     <script>
          $(function() { $("#blogs-2023").load("blogs-2023.html");});
-         $(function() { $("#top-bar").load("/html/top-bar.html");});
+         $(function() { $("#top-bar").load("html/top-bar.html");});
          window.onload = function()
             { 
-                $.getScript("/html/blog-post-element.js");
+                $.getScript("html/blog-post-element.js");
             }
     </script>
     <body class="background-holder">
         <div id="top-bar"></div>
         <div style="background-color: #271e8e;">
-            <hr style="color:#271e8e">
-            <h2 style="text-align: center; color:white;"><pre>Announcements & Blogs<pre></h2>
-            <hr style="color:#271e8e">
+            <div class="header-purple">
+                <h2><hr style="color:#271e8e">Annoucements & Blogs<hr style="color:#271e8e"></h2>
+            </div>
         </div>
         <div id="blogs-2023"></div>
     </body>
