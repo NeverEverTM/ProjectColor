@@ -18,4 +18,4 @@ class BodyManager
             $("#category-body").load("html/body-" + BodyManager.currentBodyId + ".html");
     }
 }
-BodyManager.ChangeCategory("Home");
+BodyManager.ChangeCategory("home");
