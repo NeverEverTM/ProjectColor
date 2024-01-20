@@ -13,9 +13,9 @@ class BodyManager
             BodyManager.categoryBody.removeChild(BodyManager.categoryBody.firstChild);
 
         if (_isBlog)
-            $("#category-body").load("html/blogs/" + BodyManager.currentBodyId + "-content.html");
+            $("#category-body").load("./html/blogs/" + BodyManager.currentBodyId + "-content.html");
         else
-            $("#category-body").load("html/body-" + BodyManager.currentBodyId + ".html");
+            $("#category-body").load("./html/body-" + BodyManager.currentBodyId + ".html");
     }
 }
 BodyManager.ChangeCategory("home");
