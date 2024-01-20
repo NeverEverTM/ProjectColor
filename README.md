@@ -1,9 +1,10 @@
-# ProjectColorWeb
-Source code for the webpage of Project Color
+# ProjectColor SRC
+Source code for the website of Project Color Media
+Managed by me, the creator.
 
-TODO: 
-- ~~Add development talk on **Firelight**~~
-- ~~Work on the **A Light Away** rundown~~
-- ~~Add missing icons for tab buttons and misc blog posts~~
-- ~~Replace title.png with final version~~
-- Mobile Support (?)
+I am not very good at html nor js but I try my best
+You may find:
+- News about upcoming content
+- Development logs
+- Social media and Contacts
+- General information on projects

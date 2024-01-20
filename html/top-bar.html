@@ -1,26 +1,14 @@
     <!-- TOP-BAR  --> 
 <style>
-    .background-holder
-        {
-            font-size: larger;
-            color: white;
-            font-family: fantasy;
-            background-image: url("/ProjectColor/img/lost.PNG");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            background-color: #916cbb;
-        }
     .homebutton
         {
-            font-family: fantasy;
+            font-family: Bubblegum-Sans;
             color: #1d27ad;
             background-color: #5f89e4;
             cursor: pointer;
             padding: 8px;
             border: 4px solid #271e8e;
-            font-size: large;
+            font-size: larger;
             width: 18%;
             border-radius: 16px;
         }
@@ -28,63 +16,31 @@
         {
             color: #916cbb;
             border: 4px solid #916cbb;
-            width: 20%;
             background-color: #9ebefa;
         }
-    .highlight
-        {
-            color: #53dadf;
-        }
-    .container-purple
-    {
-        border: 2px solid #271e8e; 
-        background-color: #271e8e88;
-        margin:0 auto;
-    }
-    .header-purple
-    {
-        background-color: #271e8e;
-        outline: 4px solid #271e8e; 
-        margin:0 auto;
-        text-align: center; 
-        color:white;
-    }
 </style>
 
 <div>
-    <img src="img/title.png" alt="Project Color Media" width="600" height="50">
+    <a href="/">
+        <img src="/img/title.png" alt="Project Color Media" width="600" height="50">
+    </a>
 </div>
-
 <h3 style="text-align: center;">
-    <a href="/index.html">
-        <button type="button" class="homebutton">
-            <img style="vertical-align:middle" src="/ProjectColor/img/blog_icon_new.png" width="30" height="30"> 
-            Home
-        </button>
-    </a>
-    <!-- 
-    <a href="/Games/index.html">
-        <button type="button" class="homebutton">
-            <img style="vertical-align:middle" src="/img/blog_icon_new.png" width="30" height="30"> 
-            Games
-        </button>
-    </a> -->
-    <a href="/Blogs/index.html">
-        <button type="button" class="homebutton">
-            <img style="vertical-align:middle" src="/ProjectColor/img/blog_icon_new.png" width="30" height="30"> 
-            Blogs
-        </button>
-    </a>
-    <a href="/ProjectColor/About/index.html">
-        <button type="button" class="homebutton">
-            <img style="vertical-align:middle" src="/ProjectColor/img/blog_icon_new.png" width="30" height="30"> 
-            About
-        </button>
-    </a>
-    <a href="/ProjectColor/Contacts/index.html">
-        <button type="button" class="homebutton">
-            <img style="vertical-align:middle" src="/ProjectColor/img/blog_icon_new.png" width="30" height="30"> 
-            Contacts
-        </button>
-    </a>
+    <button id="home" type="button" class="homebutton">
+        <img style="vertical-align:middle" src="img/blog_icon_new.png" width="30" height="30"> 
+        Home
+    </button>
+    <button id="blogs" type="button" class="homebutton">
+        <img style="vertical-align:middle" src="img/blog_icon_new.png" width="30" height="30"> 
+        Blogs
+    </button>
+    <button id="about" type="button" class="homebutton">
+        <img style="vertical-align:middle" src="img/blog_icon_new.png" width="30" height="30"> 
+        About
+    </button>
+    <button id="contacts" type="button" class="homebutton">
+        <img style="vertical-align:middle" src="img/blog_icon_new.png" width="30" height="30"> 
+        Contacts
+    </button>
 </h3>
+<script src="/scripts/home-button.js"></script>
