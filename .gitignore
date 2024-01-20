@@ -11,7 +11,7 @@
 # Built Visual Studio Code Extensions
 *.vsix
 
-_site/
+_site/*
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
