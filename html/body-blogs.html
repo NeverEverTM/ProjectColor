@@ -1,29 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .blog-post {
-        font-family: Cabin-Condensed;
-        background-color: #5f89e4;
-        cursor: pointer;
-        margin-bottom: 1em;
-        padding: 0 16px;
-        outline: 2px solid #1d27ad;
-        border: none;
-        border-radius: 12px;
-        width: 100%;
-        }
-        .active, .blog-post:hover {
-        width: 100%;
-        background-color: #9ebefa;
-        }
-        .blog-date
-        {
-            color:#271e8e;
-            min-width: 30%;
-            display:flex;justify-content:flex-end;align-items:center;
-        }
-    </style>
-
     <body>
         <div class="header-purple">
             <h1><hr style="color:#271e8e">Blog Archive<hr style="color:#271e8e"></h1>
@@ -36,6 +12,7 @@
             <button name="devlog0" onclick="BodyManager.ChangeCategory(this.name, 'blog')" type="button" class="blog-post"></button>
             <button name="devlog1" onclick="BodyManager.ChangeCategory(this.name, 'blog')" type="button" class="blog-post"></button>
             <button name="devlog2" onclick="BodyManager.ChangeCategory(this.name, 'blog')" type="button" class="blog-post"></button>
+            <button name="festival-intro" onclick="BodyManager.ChangeCategory(this.name, 'blog')" type="button" class="blog-post"></button>
         </div>
 
     </body>

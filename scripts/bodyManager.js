@@ -1,44 +1,58 @@
-class BodyManager
-{
+class BodyManager {
     static currentBodyId = "";
     static categoryBody = document.getElementById("category-body");
 
     // TODO: changing blog loading, so is done in a separate html page as the Home one
-    // This should solve the hash not working as well as setting manually some blog content on the head
+    // This should solve the hash not working, as well as setting manually some blog content on the head
 
-    static ChangeCategory(_category, _type = "body")
+    static ThrowError(e)
     {
-        if (BodyManager.currentBodyId == _category)
+        $("#category-body").load("./html/blogs/test-content.html");
+        console.log(e);
+    }
+
+    static GetPath(_type)
+    {
+        switch (_type) {
+            case "body":
+                return "./html/body-" + BodyManager.currentBodyId + ".html";
+            case "blog":
+                return "./html/blogs/" + BodyManager.currentBodyId + "-content.html";
+            default:
+                throw Error("Not a valid type!");
+        }
+    }
+
+    static ChangeCategory(_category, _type = "body") {
+        if (this.currentBodyId == _category)
             return;
-        BodyManager.currentBodyId = _category;
+        this.currentBodyId = _category;
 
-        while (BodyManager.categoryBody.hasChildNodes())
-            BodyManager.categoryBody.removeChild(BodyManager.categoryBody.firstChild);
+        while (this.categoryBody.hasChildNodes())
+            this.categoryBody.removeChild(this.categoryBody.firstChild);
 
-        try
+        try 
         {
-            switch(_type)
-            {
-                case "body":
-                    $("#category-body").load("./html/body-" + BodyManager.currentBodyId + ".html");
-                    break;
-                case "blog":
-                    $("#category-body").load("./html/blogs/" + BodyManager.currentBodyId + "-content.html");
-                    break;
-            }
-            var _url = new URL(window.location.href);
-            var _hash;
-            _url.searchParams.set("id", _category)
-            _url.searchParams.set("type", _type)
+            var _path = this.GetPath(_type);
 
-            if (history.pushState)
-                window.history.pushState({},'', _url);
+            $.ajax({
+                url: _path,
+                type: 'HEAD',
+                error: function () { BodyManager.ThrowError("Not a valid path!"); },
+                success: function () {
+                    $("#category-body").load(_path);
+
+                    var _url = new URL(window.location.href);
+                    _url.searchParams.set("id", _category)
+                    _url.searchParams.set("type", _type)
+
+                    if (history.pushState)
+                        window.history.pushState({}, '', _url);
+                    return
+                }
+            });
         }
-        catch(e)
-        {
-            $("#category-body").load("./html/blogs/test-content.html");
-            console.log(e);
-        }
+        catch (e) { this.ThrowError(e); }
     }
 }
 
