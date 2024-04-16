@@ -31,7 +31,7 @@ function CreateButton(name, _href) {
 
     // create icon image
     let newImg = document.createElement("img")
-    newImg.src = "/img/icons/icon_" + name.toLowerCase() + ".png";
+    newImg.src = "./img/icons/icon_" + name.toLowerCase() + ".png";
     newImg.height = 30;
     newImg.width = 30;
     newButton.appendChild(newImg);

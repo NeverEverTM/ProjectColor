@@ -35,7 +35,7 @@ async function InsertBlogs() {
         // create icon image
         let newImg = document.createElement("img")
         newImg.style = "vertical-align:middle;"
-        newImg.src = "/img/icons/blog_icon" + GetIcon(_lookUpTable[i].icon) + ".png";
+        newImg.src = "./img/icons/blog_icon" + GetIcon(_lookUpTable[i].icon) + ".png";
         newImg.height = 30;
         newImg.width = 30;
         newH2.appendChild(newImg);
