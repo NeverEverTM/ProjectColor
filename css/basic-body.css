@@ -1,6 +1,3 @@
-/* <!-- CSS used for Tab Headers anc Content -->
-        <!-- "Blogs" use a different one since wrapping breaks the neat distribution, 
-            note: wrap is made of (overflow/4 white-space/wordwrap)--> */
 .container-purple
 {
     border: 2px solid #271e8e; 
@@ -66,4 +63,26 @@
     margin-right: auto; 
     max-width: 50%; 
     max-height: 50%;
+}
+.homebutton
+{
+    font-family: Bubblegum-Sans;
+    font-size: x-large;
+    color: #1d27ad;
+    background-color: #5f89e4;
+    border: 4px solid #271e8e;
+    border-radius: 16px;
+    padding: 6px;
+    margin: 12px;
+    min-width: 18%;
+}
+.homebutton>img
+{
+    vertical-align:middle
+}
+.homebutton:hover
+{
+    color: #916cbb;
+    border: 4px solid #916cbb;
+    background-color: #9ebefa;
 }

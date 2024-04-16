@@ -1,0 +1,44 @@
+[
+    {
+        "name": "intro",
+        "title": "Offical Website Introduction (READ FIRST!!!)",
+        "icon": "default",
+        "date": "18 January 2024"
+    },
+    {
+        "name": "march",
+        "title": "Delaying March plans (and preparing for April)",
+        "icon": "new",
+        "date": "26 March 2024"
+    },
+    {
+        "name": "festival-intro",
+        "title": "Revealing plans for 2024 + incoming demo for silly project!",
+        "icon": "default",
+        "date": "25 February 2024"
+    },
+    {
+        "name": "firelight",
+        "title": "Firelight (Brief description)",
+        "icon": "firelight",
+        "date": "18 January 2024"
+    },
+    {
+        "name": "devlog0",
+        "title": "Devlog #00: Firelight. Death and Taxes, why not both? Aka player death penalties.",
+        "icon": "firelight",
+        "date": "18 January 2024"
+    },
+    {
+        "name": "devlog1",
+        "title": "Devlog #01: Firelight. The many inspirations of Lumi, and its concepts",
+        "icon": "firelight",
+        "date": "18 January 2024"
+    },
+    {
+        "name": "devlog2",
+        "title": "Devlog #02: Toffee & Saria: Bugging me out",
+        "icon": "firelight",
+        "date": "25 February 2024"
+    }
+]

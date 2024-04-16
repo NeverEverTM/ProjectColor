@@ -8,7 +8,7 @@
     <meta name="og:title" content="Project Color Media">
     <meta property="og:description"
         content="To deliver the ultimate experience. Official website for Project Color projects, managed by Summer.">
-    <meta property="og:image" content="https://neverevertm.github.io/ProjectColor/img/blog_icon_fl.png">
+    <meta property="og:image" content="https://neverevertm.github.io/ProjectColor/img/icons/blog_icon_fl.png">
     <meta property="og:url" content="https://neverevertm.github.io/ProjectColor">
 
     <link rel="icon" type="img/png" href="https://neverevertm.github.io/ProjectColor/img/artificial_raw.png">
@@ -43,10 +43,41 @@
 </head>
 
 <body class="background-holder">
+    <div id="logo"></div>
     <div id="top-bar"></div>
-    <div id="category-body"></div>
+    <div class="container-purple" style="display: flex; justify-content: space-between;">
+        <pre class="content-text" style="text-align: center; min-width: 50%;">
+    Welcome to the Project Color Hub!
+                
+    Search through tabs using the buttons above.
+    If you are in mobile, it is recommended you browse sideways for a better experience.
+    
+    Now about the tabs:
+    <h3 class="header-article"><img src="img/toffeeJoy.PNG" alt="moth uvu" width="24" height="24"> Blogs <img src="img/toffeeJoy.PNG" alt="moth uvu" width="24" height="24"></h3>
+    The Blog Archive is where most of the interesting stuff is seen, devlogs, commentaries, announcements and the such.
+    <h3 class="header-article"><img src="img/artificial_raw.png" alt="logo" width="24" height="24"> About <img src="img/artificial_raw.png" alt="logo" width="24" height="24"></h3>
+    About Project Color and projects related to it (and extra ones!)
+    <h3 class="header-article"><img src="img/icons/blog_icon_new.png" alt="!" width="24" height="24"> Contacts <img src="img/icons/blog_icon_new.png" alt="!" width="24" height="24"></h3>
+    All the ways to get in touch about Project Color related media
+        </pre>
+
+        <script>
+            function ShouldExist(_element) {
+                if (window.innerWidth < 800) {
+                    _element.width = 0;
+                    console.log("Removed Discord Widget");
+                }
+                else {
+                    _element.width = 300;
+                }
+            }
+        </script>
+
+        <iframe onload="ShouldExist(this)" src="https://discord.com/widget?id=814662245698109470&theme=dark"
+            style="max-width: 30%;" width="300" height="650" allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
 </body>
-<script src="./scripts/bodyManager.js"></script>
-<script> $(function () { $("#top-bar").load("./html/top-bar.html"); }); </script>
+<script src="./scripts/home-button.js"></script>
 
 </html>
