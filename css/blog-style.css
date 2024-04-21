@@ -1,3 +1,28 @@
+/* ======| Content Related |======== */
+.content {
+    font-family: Cabin-Condensed;
+    font-size: larger;
+    padding-left: 32px;
+    padding-right: 32px;
+    overflow: hidden;
+    border: 2px solid #020088;
+    border-radius: 12px;
+    outline: #080831;
+    background: linear-gradient(90deg, rgba(37, 12, 150, 0.7),  rgba(102, 2, 2, 0.7)),rgba(112, 0, 84, 0.7);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .content > hr {
     color: #271e8e;
 }
@@ -12,7 +37,6 @@
     white-space: -o-pre-wrap;
     word-wrap: break-word;
 }
-
 .content > h2
 {
     color: #b44dd3;
@@ -22,8 +46,9 @@
     border-radius: 8px;
 }
 
+/* ======| Misc |=========== */
 .highlight {
-    color: #53dadf;
+    color: #80da45;
 }
 
 .highlight-link {
@@ -38,18 +63,6 @@
     border: 2px solid #040033;
     padding: 6px 8px 6px 8px;
     border-radius: 8px;
-}
-
-.content {
-    font-family: Cabin-Condensed;
-    font-size: larger;
-    padding-left: 32px;
-    padding-right: 32px;
-    overflow: hidden;
-    border: 2px solid #020088;
-    border-radius: 12px;
-    background-color: rgba(17, 3, 82, 0.9);
-    outline: #080831;
 }
 
 .content-text {

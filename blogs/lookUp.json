@@ -2,13 +2,19 @@
     {
         "name": "intro",
         "title": "Offical Website Introduction (READ FIRST!!!)",
-        "icon": "default",
+        "icon": "new",
         "date": "18 January 2024"
+    },
+    {
+        "name": "april",
+        "title": "Aphid Festival Resort Demo Date + unrelated advancements",
+        "icon": "new",
+        "date": "25 February 2024"
     },
     {
         "name": "march",
         "title": "Delaying March plans (and preparing for April)",
-        "icon": "new",
+        "icon": "default",
         "date": "26 March 2024"
     },
     {
