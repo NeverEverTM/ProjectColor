@@ -1,6 +1,6 @@
 body {
     color: white;
-    background-image: url("/img/lost.PNG");
+    background-image: url("./lost.PNG");
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
