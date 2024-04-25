@@ -6,10 +6,16 @@
         "date": "18 January 2024"
     },
     {
-        "name": "april",
-        "title": "Aphid Festival Resort Demo Date + unrelated advancements",
+        "name": "festival-demo",
+        "title": "Aphid Festival Resort Demo Release",
         "icon": "new",
-        "date": "25 February 2024"
+        "date": "25 April 2024"
+    },
+    {
+        "name": "april",
+        "title": "News for april + unrelated advancements",
+        "icon": "new",
+        "date": "21 April 2024"
     },
     {
         "name": "march",
