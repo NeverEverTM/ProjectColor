@@ -8,20 +8,7 @@
     border: 2px solid #020088;
     border-radius: 12px;
     outline: #080831;
-    background: linear-gradient(90deg, rgba(37, 12, 150, 0.7),  rgba(102, 2, 2, 0.7)),rgba(112, 0, 84, 0.7);
-	background-size: 400% 400%;
-	animation: gradient 25s ease infinite;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    background-color: rgba(37, 12, 150, 0.7);
 }
 .content > hr {
     color: #271e8e;

@@ -6,15 +6,21 @@
         "date": "18 January 2024"
     },
     {
+        "name": "2024-may",
+        "title": "May Advancements / Aphid Festival Resort 0.1.2",
+        "icon": "new",
+        "date": "26 May 2024"
+    },
+    {
         "name": "festival-demo",
         "title": "Aphid Festival Resort Demo Release",
-        "icon": "new",
+        "icon": "default",
         "date": "25 April 2024"
     },
     {
         "name": "april",
         "title": "News for april + unrelated advancements",
-        "icon": "new",
+        "icon": "default",
         "date": "21 April 2024"
     },
     {
