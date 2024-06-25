@@ -6,9 +6,15 @@
         "date": "18 January 2024"
     },
     {
+        "name": "2024-june",
+        "title": "June Update (Minor remarks)",
+        "icon": "new",
+        "date": "25 June 2024"
+    },
+    {
         "name": "2024-may",
         "title": "May Advancements / Aphid Festival Resort 0.1.2",
-        "icon": "new",
+        "icon": "default",
         "date": "26 May 2024"
     },
     {
@@ -18,13 +24,13 @@
         "date": "25 April 2024"
     },
     {
-        "name": "april",
+        "name": "2024-april",
         "title": "News for april + unrelated advancements",
         "icon": "default",
         "date": "21 April 2024"
     },
     {
-        "name": "march",
+        "name": "2024-march",
         "title": "Delaying March plans (and preparing for April)",
         "icon": "default",
         "date": "26 March 2024"
