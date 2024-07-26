@@ -16,7 +16,7 @@
 .content > pre
 {
     font-family: Cabin-Condensed;
-    font-kerning: none;
+    font-kerning: auto;
     overflow-x: auto;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
