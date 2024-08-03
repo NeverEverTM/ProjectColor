@@ -2,16 +2,17 @@ var _url = new URL(window.location.href);
 if (history.pushState)
     window.history.pushState({}, '', _url);
 
-// create logo div
+// create logo div and href
 let logoDiv = document.getElementById("logo");
-
 let logoA = document.createElement("a");
 logoA.href = "./";
+logoDiv.style = "text-align:center;"
 logoDiv.appendChild(logoA)
 
+// adjust image
 let logoImg = document.createElement("img")
 logoImg.src = "./img/title.png";
-logoImg.style = "max-width: 100%;min-height: 100%;"
+logoImg.style = "min-width: 30%;max-width: 30%;min-height: 30%;"
 logoImg.alt = "Project Color Media";
 logoA.appendChild(logoImg);
 
@@ -44,6 +45,8 @@ function CreateButton(name, _href) {
 // create top bar div
 let topbarDiv = document.getElementById("top-bar");
 topbarDiv.style = "text-align: center;";
+
+// append buttons
 topbarDiv.appendChild(CreateButton("Home", "index"))
 topbarDiv.appendChild(CreateButton("Blogs", "blog-archive"))
 topbarDiv.appendChild(CreateButton("About", "about"))

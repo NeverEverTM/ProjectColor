@@ -35,37 +35,3 @@ async function SetContent() {
 }
 
 SetContent();
-
-// // create a new div element
-// let newDiv = document.createElement("div");
-// newDiv.style = "display: flex; justify-content: space-between;"
-// newButton.appendChild(newDiv)
-
-// // create title container
-// let newH2 = document.createElement("h2");
-// newDiv.appendChild(newH2);
-
-// // create icon image
-// let newImg = document.createElement("img")
-// newImg.style = "vertical-align:middle;"
-// newImg.src = "/img/icons/blog_icon" + GetIcon(_lookUpTable[i].icon) + ".png";
-// newImg.height = 30;
-// newImg.width = 30;
-// newH2.appendChild(newImg);
-
-// // create title
-// let newContent =
-// newH2.appendChild(newContent);
-
-// // create date container
-// let newH3 = document.createElement("h3");
-// newH3.setAttribute("class", "blog-date");
-// newDiv.appendChild(newH3);
-
-// // create date
-// let newDate = document.createTextNode(_lookUpTable[i].date);
-// newH3.appendChild(newDate);
-
-// // add to blogs
-// let currentDiv = document.getElementById("container");
-// currentDiv.appendChild(newButton);
