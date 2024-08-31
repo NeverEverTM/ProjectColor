@@ -49,5 +49,6 @@ topbarDiv.style = "text-align: center;";
 // append buttons
 topbarDiv.appendChild(CreateButton("Home", "index"))
 topbarDiv.appendChild(CreateButton("Blogs", "blog-archive"))
+topbarDiv.appendChild(CreateButton("Gallery", "gallery"))
 topbarDiv.appendChild(CreateButton("About", "about"))
 topbarDiv.appendChild(CreateButton("Contacts", "contact"))

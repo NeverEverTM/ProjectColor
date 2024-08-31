@@ -26,6 +26,25 @@ body {
     word-wrap: break-word;
 }
 
+.container-gallery
+ {
+    font-family: Cabin-Condensed;
+    font-size: larger;
+    padding-left: 32px;
+    padding-right: 32px;
+    overflow: hidden;
+    border: 2px solid #020088;
+    border-radius: 12px;
+    outline: #080831;
+    background-color: rgba(37, 12, 150, 0.7);
+    padding: 24px 24px 24px 24px;
+}
+.container-gallery > img
+{
+    max-width: 600px;
+    max-height: 300px;
+}
+
 .header-purple {
     font-family: Bubblegum-Sans;
     background-color: #271e8e;

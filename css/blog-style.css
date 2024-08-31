@@ -24,12 +24,30 @@
     white-space: -o-pre-wrap;
     word-wrap: break-word;
 }
+.content > p
+{
+    font-family: Cabin-Condensed;
+    font-kerning: auto;
+    overflow-x: auto;
+    white-space: normal;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
 .content > h2
 {
     color: #b44dd3;
     background-color: #271e8e;
     border: 2px solid #040033;
     padding: 6px 8px 6px 8px;
+    border-radius: 8px;
+}
+.content > div
+{
+    background-color: #271e8e;
+    border: 1px solid #040033;
+    padding: 8px 12px 8px 12px;
     border-radius: 8px;
 }
 
@@ -41,6 +59,14 @@
 .highlight-link {
     color: #2bdf3a;
     cursor: pointer;
+}
+.inner-div
+{
+    background-color: #611e8e;
+    border: 1px solid #040033;
+    padding: 8px 12px 8px 12px;
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
 }
 
 .header-article 
