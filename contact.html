@@ -6,8 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="og:title" content="Project Color Media - Contacts">
-    <meta property="og:description"
-        content="Contacts and/or Social Medias.">
+    <meta property="og:description" content="Contacts and/or Social Medias.">
     <meta property="og:image" content="https://neverevertm.github.io/ProjectColor/img/icons/blog_icon_fl.png">
     <meta property="og:url" content="https://neverevertm.github.io/ProjectColor/contact.html">
 
@@ -27,9 +26,16 @@
             font-family: Cabin-Condensed;
             src: url("./img/fonts/CabinCondensed-Regular.ttf") format("truetype");
         }
+        @media screen and (min-width: 900px) {
+            .container-purple
+            {
+                display: flex;
+            }
+        }
     </style>
     <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-</head> 
+</head>
+
 <body>
     <div id="logo"></div>
     <div id="top-bar"></div>
@@ -41,28 +47,52 @@
         </h1>
     </div>
 
-    <div class="container-purple" style="text-align: center;">
-        Source code for this website and other projects is hosted through Github.
-        Most of my social medias are here present.
+    <div class="container-purple">
+        <iframe id='kofiframe' src='https://ko-fi.com/neverevertm/?hidefeed=true&widget=true&embed=true&preview=true'
+            style='flex: 25%; max-height: 500px; border:none;padding:4px;background:#1107a0;' height='712'
+            title='neverevertm'>
+        </iframe>
+        <div style="padding: 24px 64px 24px 64px;text-align: center;flex: 50%;">
+            <p>
+                Source code for this website and other projects is hosted through Github.
+            </p>
 
-        I go by neverevertm/Summer/NeverEverTM in any of these
-        <div class="header-article" style="display: flex; justify-content: space-evenly; vertical-align: bottom;">
-            <a href="https://www.youtube.com/channel/UC0nATV7vyUdv01xY4pvHD1A"><img style="padding-top: 10px;"
-                    src="img/socials/youtube_social_icon_red.png" alt="Youtube link" width="70" height="50"></a>
-            <a href="https://www.deviantart.com/neverevertm"><img src="img/socials/devianart.png" alt="Devianart link"
-                    width="70" height="70"></a>
-            <a href="https://discord.gg/6x6SkwVQ7Y"><img style="padding-top: 10px;"
-                    src="img/socials/discord-mark-white.png" alt="Discord link" width="70" height="50"></a>
-            <a href="https://github.com/NeverEverTM"><img src="img/socials/github-mark-white.png" alt="Github link"
-                    width="70" height="70"></a>
-            <a href="https://neverevertm.itch.io/"><img src="img/socials/itchio-logo-textless-white.png"
-                    alt="Itch.io link" width="70" height="70"></a>
+            <div>
+                <p>
+                    Most of my social medias are here present.
+                </p>
+                <p>
+                    I go by neverevertm/Summer/NeverEverTM in any of these
+                </p>
+
+            </div>
+            <div class="header-article"
+                style="display: inline-block;text-align: center; width: 50%;justify-content:space-between;">
+                <a target="_blank" href="https://www.youtube.com/channel/UC0nATV7vyUdv01xY4pvHD1A"><img
+                        style="padding-top: 10px;" src="img/socials/youtube_social_icon_red.png" alt="Youtube link"
+                        width="70" height="50"></a>
+                <a target="_blank" href="https://www.deviantart.com/neverevertm"><img src="img/socials/devianart.png"
+                        alt="Devianart link" width="70" height="70"></a>
+                <a target="_blank" href="https://discord.gg/6x6SkwVQ7Y"><img style="padding-top: 10px;"
+                        src="img/socials/discord-mark-white.png" alt="Discord link" width="70" height="50"></a>
+                <a target="_blank" href="https://github.com/NeverEverTM"><img src="img/socials/github-mark-white.png"
+                        alt="Github link" width="70" height="70"></a>
+                <a target="_blank" href="https://neverevertm.itch.io/"><img
+                        src="img/socials/itchio-logo-textless-white.png" alt="Itch.io link" width="70" height="70"></a>
+                <a target="_blank" href="https://bsky.app/profile/neverevertm.bsky.social"><img
+                        src="img/socials/bluesky-logo.svg" alt="Bluesky link" width="70" height="70"></a>
+            </div>
+
+            <p>
+                For business inquiries or questions send an email to:
+                <span class="header-article"><a class="highlight-link"
+                        href="mailto:projectcolor@outlook.com">projectcolor@outlook.com</a></span>
+            </p>
+
+
+
         </div>
-        For business inquiries or questions send an email to:
-        
-        <span class="header-article"><a class="highlight-link" href="mailto:projectcolor@outlook.com">projectcolor@outlook.com</a></span>
-        
-        <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#4a28e0', 'Z8Z1JUQG2');kofiwidget2.draw();</script>
+
     </div>
 </body>
 

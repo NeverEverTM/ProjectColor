@@ -29,44 +29,71 @@
             src: url("./img/fonts/CabinCondensed-Regular.ttf") format("truetype");
         }
     </style>
+
+    <script>
+        function ShouldExist() {
+            let _discordWindow = document.getElementById("discord")
+            if (window.innerWidth < 800) {
+                _discordWindow.width = 0;
+                console.log("Removed Discord Widget");
+            }
+            else {
+                _discordWindow.width = 300;
+            }
+        }
+        $(window).resize(ShouldExist);
+    </script>
 </head>
 
 <body>
     <div id="logo"></div>
     <div id="top-bar"></div>
     <div class="container-purple" style="display: flex; justify-content: space-between;">
-        <pre class="content-text" style="text-align: center; min-width: 50%;">
-    Welcome to the Project Color Hub!
-                
-    Search through tabs using the buttons above.
-    If you are in mobile, it is recommended you browse sideways for a better experience.
-    
-    Now about the tabs:
-    <h3 class="header-article"><img src="img/toffeeJoy.PNG" alt="moth uvu" width="24" height="24"> Blogs <img src="img/toffeeJoy.PNG" alt="moth uvu" width="24" height="24"></h3>
-    The Blog Archive is where most of the interesting stuff is seen, devlogs, commentaries, announcements and the such.
-    <h3 class="header-article"><img src="img/artificial_raw.png" alt="logo" width="24" height="24"> About <img src="img/artificial_raw.png" alt="logo" width="24" height="24"></h3>
-    About Project Color and projects related to it (and extra ones!)
-    <h3 class="header-article"><img src="img/icons/blog_icon_new.png" alt="!" width="24" height="24"> Contacts <img src="img/icons/blog_icon_new.png" alt="!" width="24" height="24"></h3>
-    All the ways to get in touch about Project Color related media
-        </pre>
+        <div>
+            <h2>
+                <img src="img/icons/blog_icon.png" alt="icon contacts" width="24" height="24">
+                Welcome to Project Color!
+            </h2>
+            <p class="content" style="padding: 24px 16px 24px 16px;">
+                Feel free to browse around and learn all about the little things.
+            </p>
 
-        <script>
-            function ShouldExist(_element) {
-                if (window.innerWidth < 800) {
-                    _element.width = 0;
-                    console.log("Removed Discord Widget");
-                }
-                else {
-                    _element.width = 300;
-                }
-            }
-        </script>
+            <h2>
+                <img src="img/icons/blog_icon_new.png" alt="icon contacts" width="24" height="24">
+                Latest Web Update
+            </h2>
+            <p class="content" style="padding: 24px 16px 24px 16px;">
+                A brand new coat of paint for some of the main pages has been given. 
+                If you know a good host provider with python PLEASE hit me up 
+            </p>
+            <h3 class="header-article"><img src="img/icons/icon_blogs.png" alt="icon blogs" width="24" height="24"> <a
+                    class="highlight-link" href="./blog-archive.html"> Blog Archive</a></h3>
+            Brand new updates every month. Most of the time. Not always interesting.
+            <h3 class="header-article"><img src="img/icons/icon_gallery.png" alt="icon gallery" width="24" height="24">
+                <a class="highlight-link" href="./gallery.html"> Gallery</a></h3>
+            A showcase of arts and crafts made by yours truly. Updated every once in a while.
+            <h3 class="header-article"><img src="img/icons/icon_about.png" alt="icon about" width="24" height="24"> <a
+                    class="highlight-link" href="./about.html"> About</a></h3>
+            Short descriptions for the whole thing.
+            <h3 class="header-article"><img src="img/icons/icon_contacts.png" alt="icon contacts" width="24"
+                    height="24"> <a class="highlight-link" href="./contact.html"> Contacts</a></h3>
+            Quick ways to get in contact or follow social presence.
 
-        <iframe onload="ShouldExist(this)" src="https://discord.com/widget?id=814662245698109470&theme=dark"
-            style="max-width: 30%;" width="300" height="650" allowtransparency="true" frameborder="0"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <h2 class="header-article" style="text-align: center;">
+                "To be the best version of yourself is what truly makes us human"
+            </h2>
+        </div>
+
+        <iframe id="discord" onload="ShouldExist()" src="https://discord.com/widget?id=814662245698109470&theme=dark"
+            style="max-width: 30%;padding: 0px 12px 0px 12px;" width="300" height="650" allowtransparency="true"
+            frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+        </iframe>
     </div>
+
+
 </body>
 <script src="./scripts/home-button.js"></script>
+<p class="copyright">@ 2024 Project Color</p>
 
 </html>
