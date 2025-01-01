@@ -11,12 +11,12 @@ async function SetContent() {
     }
 
     let titleDiv = document.getElementById("title");
-    let titleText = document.createTextNode(_id.title);
-    titleDiv.appendChild(titleText);
+    titleDiv.appendChild(document.createTextNode(_id.title));
 
     let dateDiv = document.getElementById("date");
-    let dateText = document.createTextNode(_id.date);
-    dateDiv.appendChild(dateText);
+    let categoryDiv = document.getElementById("category");
+    dateDiv.appendChild(document.createTextNode("Uploaded on " + _id.date));
+    categoryDiv.appendChild(document.createTextNode("Category: " + _id.category));
 
     var _path = "./blogs/" + _id.name + "-content.html";
     $.ajax({

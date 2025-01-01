@@ -1,4 +1,89 @@
 <pre>
-    This had info on the fourth devlog, but it is outdated and also not complete.
-    Please ignore :3
+    Games need enemies, you put them to offer a challenge, enemy hits player, 
+    they explode, player hits enemy and becomes rich, the usual thing.
+
+    For this to work there is many different things you have to learn but for now,
+    I will try to get an in-depth on how AI for enemies here works, and my goals 
+    for it (if any).
+
+    Get a seat and a snack to read a long, technical ramble about...
+</pre>
+
+<h2 id="EnemyBehaviour">How do enemies think<a href="#EnemyBehaviour" title="Article Link">¶</a></h2>
+<pre>
+    I'll gloss over most of the specific details but here is the general method of thinking.
+
+    You want enemy to kill player, it needs:
+    1. Know how to hurt it
+    2. If needed, walk up to it, avoid obstacles when applicable
+
+    Even with the most simple behaviour, you have to account for anything,
+    all of it has to be designed, programed and balanced properly manually,
+    and that is when most people get lost.
+    
+    Don't want your guy to maybe walk into a pit, or run straight into fire,
+    maybe it needs tactical defense against something as dumb as standing in
+    high ground...
+
+    First, I'll explain how the most basic (and thus far, most developed) enemy works
+    in Firelight, the Scoutstruct.
+</pre>
+
+<h2 id="Initial">Starting the behaviour <a href="#Initial" title="Article Link">¶</a></h2>
+<pre>
+    In order to make first appearences less awkward and more natural, or simply have an opportunity to
+    spot the player, enemies have idle cycles through which they wander and do simple
+    actions to mimic the passive behaviour of a creature.
+
+    In the case of ours, it's a basic moving around in random points of space near them,
+    which then they walk towards, generate a new wander position, and repeat.
+
+    For the detection part, the enemy has an invisible circle around them that spots
+    other entities in its vicinities, if these are valid targets then start the chasing,
+        Another way of detection is through a sort of "vision", three raycasts are thrown in
+    the direction they are looking, they have a further range than the circle but are 
+    limited in coverage.
+
+    Now that we have someone as target, we simply move in a straight line towards it,
+    in more complicated enemies, they could have different more inteligent chase patterns,
+    in this case, we have the player in sight, by casting a line from the enemy and the target.
+
+    But what if said sightline is blocked? Well, in that case we prepare to find our way in
+</pre>
+
+<h2 id="Pathfind">Finding the way<a href="#Pathfind" title="Article Link">¶</a></h2>
+<pre>
+    The current implementation for pathfinding around is the A Star algorithm, the way it works
+    is a bit elaborated so I will try to keep it simple:
+
+    First we create a grid of nodes(tiles) as a map for the path, this is done per enemy to fit
+    their needs, let's say small units have a 1:1 tile to node size but larger ones have a 4:1 size
+    so it does not try fitting in a smaller cavity than intended.
+
+    Second is establishing the start and end of the path, us and the target, following this, we
+    explore the neighbors around the start, for every neighbor explored we do the following:
+        - Calculate the distance value between this node and the start
+        - Calculate the distance value between this node and the end 
+        - Sum both of these and assign the value to the neighbor
+        - Set the parent of this neighbor as the main node we branched out of
+        - Mark it as explored and therefore, calculated, and add it to a list of explored nodes
+    
+    Third step, now using the list we gathered, we check for the lowest calculated value in this list,
+    once is selected, we go back to the second step and repeat until we find the End node
+
+    Fourth, once you find the end, simply make a list with all of the parents of the nods until you reach back
+    to the start, optionally, reverse the list so the next step is the first elements in the list, rather than
+    the last ones
+
+    Done! We got a path, that does not include an array of possibilities that can happen while calculating it
+    but is pretty much the gist of it, of course, this operation is not done every frame
+        For ours, this is done every 10 phyiscs ticks, there is 50 ticks per second for a total of 5 path
+    calculations.
+</pre>
+<h2 id="Attack">Attacking the player <a href="#Attack" title="Article Link">¶</a></h2>
+<pre>
+    If we have sight of the target, it's time to prepare a strike
+    
+    In terms of melee attacks, a distance check is done to see if they are within range,
+    our enemy has a slight charge delay to give the player some anticipation
 </pre>

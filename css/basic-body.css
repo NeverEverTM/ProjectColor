@@ -5,13 +5,13 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: #916cbb;
 }
 
-.container-purple {
+.container-gallery,
+.container-purple 
+{
     border: 2px solid #271e8e;
-    background-color: #271e8edc;
-    border-radius: 16px;
+    background: linear-gradient(90deg, rgb(109, 12, 109) 0%, rgba(39,30,142,1) 50%, rgb(120, 17, 146) 100%);;
     padding: 16px 32px 16px 32px;
     font-family: Cabin-Condensed;
     font-size: larger;
@@ -34,18 +34,37 @@ body {
     max-width: 600px;
     max-height: 300px;
     cursor: pointer;
-    
 }
 
 .header-purple {
     font-family: Bubblegum-Sans;
     background-color: #271e8e;
     outline: 4px solid #271e8e;
+    padding: 6px;
+    left: 24px;
     margin: 0 auto;
     text-align: center;
 }
+.header-purple > h1
+{
+    background-color: #0e0757;
+    padding: 24px;
+    outline: 4px solid rgb(99, 0, 119);
+    margin: 0 auto;
+}
 
-/* imgages */
+.header-date
+{
+    color: #ff69ff;
+    background-color: #1a136e;
+    border: 2px solid #040033;
+    padding: 6px;
+    width: 50%;
+    font-family: Bubblegum-Sans;
+    text-align: center;
+}
+
+/* images */
 .img-thumbnail {
     outline: 4px solid #020088;
     background-color: #0269a5;
@@ -56,14 +75,14 @@ body {
 .img-border {
     outline: 4px solid #020088;
     background-color: #0269a5;
+    max-width: 400px;
 }
 
 .img-thumbnail-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 50%;
+    max-width: 400px;
     outline: 4px solid #020088;
     background-color: #0269a5;
     padding: 5px;
@@ -86,7 +105,7 @@ body {
     border-radius: 16px;
     padding: 6px;
     margin: 12px;
-    min-width: 18%;
+    min-width: 30%;
 }
 
 .homebutton>img {
@@ -102,4 +121,5 @@ body {
 .copyright{
     color:rgba(152, 129, 255, 0.836);
     font-family: Cabin-Condensed;
+    bottom: 0%;
 }

@@ -2,84 +2,98 @@
     {
         "name": "intro",
         "title": "Offical Website Introduction (READ FIRST!!!)",
+        "category": "Introduction",
         "icon": "new",
         "date": "18 January 2024"
     },
     {
+        "name": "2024-december",
+        "title": "AFR December Update plus Life Ordeals",
+        "category": "Update",
+        "icon": "new",
+        "date": "20 December 2024"
+    },
+    {
         "name": "2024-october",
         "title": "AFR 0.1.3 Stable & Life Lessons (Monthly Update - September)",
-        "icon": "new",
+        "category": "Update",
+        "icon": "default",
         "date": "9 November 2024"
     },
     {
         "name": "2024-august",
         "title": "Monthly Update - August",
+        "category": "Update",
         "icon": "default",
         "date": "30 August 2024"
     },
     {
         "name": "2024-july",
         "title": "July Update + Ko-fi (Firelight, Aphid Festival Resort 1.3 And More!)",
+        "category": "Update",
         "icon": "default",
         "date": "25 July 2024"
     },
     {
         "name": "2024-june",
         "title": "June Update (Minor remarks)",
+        "category": "Update",
         "icon": "default",
         "date": "25 June 2024"
     },
     {
         "name": "2024-may",
         "title": "May Advancements / Aphid Festival Resort 0.1.2",
+        "category": "Update",
         "icon": "default",
         "date": "26 May 2024"
     },
     {
         "name": "festival-demo",
         "title": "Aphid Festival Resort Demo Release",
+        "category": "Announcement",
         "icon": "default",
         "date": "25 April 2024"
     },
     {
         "name": "2024-april",
         "title": "News for april + unrelated advancements",
+        "category": "Update",
         "icon": "default",
         "date": "21 April 2024"
     },
     {
         "name": "2024-march",
         "title": "Delaying March plans (and preparing for April)",
+        "category": "Update",
         "icon": "default",
         "date": "26 March 2024"
     },
     {
         "name": "festival-intro",
         "title": "Revealing plans for 2024 + incoming demo for silly project!",
+        "category": "Update",
         "icon": "default",
         "date": "25 February 2024"
     },
     {
-        "name": "firelight",
-        "title": "Firelight (Brief description)",
-        "icon": "firelight",
-        "date": "18 January 2024"
-    },
-    {
         "name": "devlog0",
         "title": "Devlog #00: Firelight. Death and Taxes, why not both? Aka player death penalties.",
+        "category": "Devlog",
         "icon": "firelight",
         "date": "18 January 2024"
     },
     {
         "name": "devlog1",
         "title": "Devlog #01: Firelight. The many inspirations of Lumi, and its concepts",
+        "category": "Devlog",
         "icon": "firelight",
         "date": "18 January 2024"
     },
     {
         "name": "devlog2",
         "title": "Devlog #02: Toffee & Saria: Bugging me out",
+        "category": "Devlog",
         "icon": "firelight",
         "date": "25 February 2024"
     }
