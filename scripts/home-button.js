@@ -12,7 +12,7 @@ logoDiv.appendChild(logoA)
 // adjust image
 let logoImg = document.createElement("img")
 logoImg.src = "./img/title.png";
-logoImg.style = "min-width: 30%;max-width: 30%;min-height: 30%;"
+logoImg.style = "min-width: 25%;max-width: 25%;min-height: 30%;"
 logoImg.alt = "Project Color Media";
 logoA.appendChild(logoImg);
 
@@ -44,11 +44,12 @@ function CreateButton(name, _href) {
 
 // create top bar div
 let topbarDiv = document.getElementById("top-bar");
-topbarDiv.style = "text-align: center;";
+topbarDiv.style = "text-align: center;display:block";
 
 // append buttons
 topbarDiv.appendChild(CreateButton("Home", "index"))
 topbarDiv.appendChild(CreateButton("Blogs", "blog-archive"))
+topbarDiv.appendChild(CreateButton("Commissions", "comms-info"))
 topbarDiv.appendChild(CreateButton("Gallery", "gallery"))
 topbarDiv.appendChild(CreateButton("About", "about"))
 topbarDiv.appendChild(CreateButton("Contacts", "contact"))

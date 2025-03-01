@@ -7,17 +7,24 @@
         "date": "18 January 2024"
     },
     {
-        "name": "2024-december",
-        "title": "AFR December Update plus Life Ordeals",
+        "name": "2025-february",
+        "title": "Welcome to the new year... two months late (Aphid Festival Resort v0.2 now out!)",
         "category": "Update",
-        "icon": "new",
+        "icon": "aphid",
+        "date": "27 February 2015"
+    },
+    {
+        "name": "2024-december",
+        "title": "December Update plus Life Ordeals",
+        "category": "Update",
+        "icon": "default",
         "date": "31 December 2024"
     },
     {
         "name": "2024-october",
         "title": "AFR 0.1.3 Stable & Life Lessons (Monthly Update - September)",
         "category": "Update",
-        "icon": "default",
+        "icon": "aphid",
         "date": "9 November 2024"
     },
     {
@@ -52,7 +59,7 @@
         "name": "festival-demo",
         "title": "Aphid Festival Resort Demo Release",
         "category": "Announcement",
-        "icon": "default",
+        "icon": "aphid",
         "date": "25 April 2024"
     },
     {

@@ -26,6 +26,17 @@
             font-family: Cabin-Condensed;
             src: url("./img/fonts/CabinCondensed-Regular.ttf") format("truetype");
         }
+
+        .about-display
+        {
+            display: flex;
+        }
+        @media (max-width: 800px) {
+           .about-display
+           {
+                display: inherit;
+           }
+        }
     </style>
 </head>
 
@@ -36,27 +47,29 @@
     <div class="header-purple">
         <h1>About Me And More!</h1>
     </div>
-    <div class="container-purple" style="display: flex;">
-        <img style="flex: 25%;" src="img/gallery/7.png" alt="">
-        <div class="inner-div" style="flex: 75%;">
-            <p>
-                Hi, I'm <span style="color: palevioletred;">Summer</span>! Most commonly known online as <b>NeverEver</b>.
-            </p>
-            <p>
-                I love videogames and the deep, complex and intricate design of its systems, bad at math, somewhat good at logic.
-            </p>
-            <p>
-                I do art as a hobby and I keep expanding my creative horizons each year.
-            </p>
-            <p>
-                This is my passion (and hopefully career) project.
-                Works are highlighted and archived under this website.
-            </p>
-            <p>
-                Feedback of any kind is appreciated, just contact me through any of
-                the given <a class="highlight-link" href="./contact.html">contacts</a>.
-                For any issues with the website itself, it should be sent via the email.
-            </p>
+    <div class="container-purple">
+        <div class="about-display">
+            <img style="max-width:300px; height: 300px;flex: 25%;" src="img/gallery/7.png" alt="">
+            <div class="inner-div" style="flex: 75%;">
+                <p>
+                    Hi, I'm <span style="color: palevioletred;">Summer</span>! Most commonly known online as <b>NeverEver</b>.
+                </p>
+                <p>
+                    I love videogames and the deep, complex and intricate design of its systems, bad at math, somewhat good at logic.
+                </p>
+                <p>
+                    I do art as a hobby and I keep expanding my creative horizons each year.
+                </p>
+                <p>
+                    This is my passion (and hopefully career) project.
+                    Works are highlighted and archived under this website.
+                </p>
+                <p>
+                    Feedback of any kind is appreciated, just contact me through any of
+                    the given <a class="highlight-link" href="./contact.html">contacts</a>.
+                    For any issues with the website itself, it should be sent via the email.
+                </p>
+            </div>
         </div>
     </div>
 </body>

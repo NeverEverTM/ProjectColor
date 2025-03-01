@@ -4,6 +4,8 @@ function GetIcon(icon) {
         return "_new";
     if (icon == "firelight")
         return "_fl";
+    if (icon == "aphid")
+        return "_afr";
 
     return "";
 }
