@@ -7,11 +7,18 @@
         "date": "18 January 2024"
     },
     {
+        "name": "2025-aphid-fools",
+        "title": "The biggest thing you've waiting is here! (April Fools)",
+        "category": "Update",
+        "icon": "aphid",
+        "date": "1 April 2025"
+    },
+    {
         "name": "2025-february",
         "title": "Welcome to the new year... two months late (Aphid Festival Resort v0.2 now out!)",
         "category": "Update",
         "icon": "aphid",
-        "date": "27 February 2015"
+        "date": "27 February 2025"
     },
     {
         "name": "2024-december",
