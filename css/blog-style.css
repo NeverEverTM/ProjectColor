@@ -5,7 +5,7 @@
     padding-left: 32px;
     padding-right: 32px;
     overflow: hidden;
-    border: 2px solid #c4c4c4;
+    border: 2px solid #321a8f;
     border-radius: 12px;
     background-color: rgba(37, 12, 150, 0.7);
     padding: 24px;
@@ -38,7 +38,7 @@
 }
 
 .content>h2 {
-    color: #b44dd3;
+    color: #ff69ff;
     background-color: #271e8e;
     border: 2px solid #040033;
     padding: 6px 8px 6px 8px;
